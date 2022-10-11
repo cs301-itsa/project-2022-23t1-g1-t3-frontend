@@ -6,13 +6,13 @@ function App() {
   const [data, setData] = useState(null);
  
     useEffect(() => {
-        fetch(`https://sbvei1pqah.execute-api.us-east-1.amazonaws.com/IntegrationTesting`)
+        fetch(`https://sbvei1pqah.execute-api.us-east-1.amazonaws.com/IntegrationTesting/GET`)
         .then((response) => {
                 return response.json()
         })
         .then((actualData) => {
-                console.log("Writing....");
-                
+                console.log("Writing...1.");
+                console.log(actualData);
                 setData(actualData.body);
                 console.log(actualData.body);
               })
