@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
  
 function App() {
   const [data, setData] = useState(null);
- 
+    
     useEffect(() => {
+        console.log("YO")
         fetch(`https://sbvei1pqah.execute-api.us-east-1.amazonaws.com/IntegrationTesting`)
         .then((response) => {
                 return response.json()
