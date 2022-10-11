@@ -6,7 +6,7 @@ function App() {
   const [data, setData] = useState(null);
  
     useEffect(() => {
-        fetch(`https://sbvei1pqah.execute-api.us-east-1.amazonaws.com/IntegrationTesting/GET`)
+        fetch(`https://sbvei1pqah.execute-api.us-east-1.amazonaws.com/IntegrationTesting`)
         .then((response) => {
                 return response.json()
         })
